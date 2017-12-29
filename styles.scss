@@ -1,0 +1,70 @@
+$header: 'Cardo', serif;
+$body: 'Cutive Mono', monospace;
+$white: #f7f5de;
+$blue: #5400ff;
+$red: #e54e12;
+
+body {
+	background-color: $white;
+}
+
+h1 {
+	color: transparent;
+	-webkit-text-stroke: 2px $blue;
+	font: 10rem $header;
+}
+
+p {
+	color: $blue;
+	font: 1rem $body;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.body-title {
+	text-transform: uppercase;
+	font-size: 0.5em;
+	letter-spacing: 0.5em;
+	border-bottom: 2px solid $blue;
+}
+
+#titulo {
+	line-height: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 50em;
+}
+
+.outline-box {
+	padding: 50px;
+	border: 2px solid $blue;
+}
+
+.circle {
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	z-index: -1;
+	width: 300px;
+	height: 300px;
+	background: $red;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+}
+
+.triangle {
+	position: absolute;
+	z-index: -1;
+	bottom: 50px;
+	right: 200px;
+	width: 0;
+	height: 0;
+	border-top: 150px solid transparent;
+	border-right: 300px solid $red;
+	border-bottom: 150px solid transparent;
+}
