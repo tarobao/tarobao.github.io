@@ -1,22 +1,41 @@
-$header: 'Cardo', serif;
-$body: 'Cutive Mono', monospace;
+$header: 'Work Sans', sans-serif;
+$body: 'Space Mono', monospace;
 $white: #f7f5de;
 $blue: #5400ff;
-$red: #e54e12;
+$red: #e8c5a0;
 
 body {
 	background-color: $white;
+	border: 2px solid $blue;
 }
 
 h1 {
-	color: transparent;
-	-webkit-text-stroke: 2px $blue;
-	font: 10rem $header;
+	//color: transparent;
+	//-webkit-text-stroke: 2px $blue;
+	color: $blue;
+	font: 3em $header;
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: $blue;
+	font: 1em $header;
+	text-transform: uppercase;
 }
 
 p {
 	color: $blue;
 	font: 1rem $body;
+}
+
+a {
+	color: $blue;
+	font: 1rem $body;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
 }
 
 .right-align {
@@ -31,24 +50,57 @@ p {
 }
 
 #titulo {
-	line-height: 0;
+	line-height: 1em;
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 50em;
+	margin: 5% auto;
+	padding-left: 15%;
+	max-width: 80%;
+}
+
+.header-box {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 0 50px;
+	max-width: 30%;
 }
 
 .outline-box {
-	padding: 50px;
-	border: 2px solid $blue;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	max-width: 50%;
+	padding: 25px 50px;
+	//border: 2px solid $blue;
+
+	img {
+		display: none;
+		position: absolute;
+		z-index: -1;
+	    bottom: -75px;
+	    right: -90px;
+		-webkit-transform: scaleX(-1);
+    	transform: scaleX(-1);
+	}
+}
+
+.bg-img {
+	display: none;
+	position: absolute;
+	z-index: -1;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	top: 0px;
+	left: -75px;
 }
 
 .circle {
-	position: absolute;
-	top: 100px;
-	left: 150px;
-	z-index: -1;
+	display: none;
+	position: fixed;
+	top: 75px;
+	left: 100px;
+	z-index: -2;
 	width: 300px;
 	height: 300px;
 	background: $red;
@@ -58,13 +110,14 @@ p {
 }
 
 .triangle {
-	position: absolute;
-	z-index: -1;
-	bottom: 50px;
-	right: 200px;
+	display: none;
+	position: fixed;
+	z-index: -2;
+	bottom: 100px;
+	right: 50px;
 	width: 0;
 	height: 0;
-	border-top: 150px solid transparent;
-	border-right: 300px solid $red;
-	border-bottom: 150px solid transparent;
+	border-style: solid;
+	border-width: 0 175px 303.1px 175px;
+	border-color: transparent transparent $red transparent;
 }
