@@ -9,6 +9,15 @@ body {
 	border: 2px solid $blue;
 }
 
+@font-face {
+  font-family: og-emoji;
+  src: url(/fonts/og-dcm-emoji.ttf);
+}
+
+.og {
+  font-family: og-emoji, sans-serif;
+}
+
 h1 {
 	//color: transparent;
 	//-webkit-text-stroke: 2px $blue;

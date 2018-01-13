@@ -2,6 +2,12 @@ body {
   background-color: #f7f5de;
   border: 2px solid #5400ff; }
 
+@font-face {
+  font-family: og-emoji;
+  src: url(/fonts/og-dcm-emoji.ttf); }
+.og {
+  font-family: og-emoji, sans-serif; }
+
 h1 {
   color: #5400ff;
   font: 3em "Work Sans", sans-serif;
