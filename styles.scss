@@ -61,10 +61,6 @@ header a, footer a {
 	border-bottom: 2px solid $blue;
 }
 
-#titulo {
-	line-height: 1em;
-}
-
 .container {
 	margin: 5% auto;
 	//padding-left: 15%;
@@ -77,21 +73,42 @@ header a, footer a {
 	border: 2px solid $blue;
 }
 
-.top {
+.hands-left, .hands-right, .chalk-line {
+	position: absolute;
+	z-index: -1;
+}
+
+.hands-left {
+	left: 0;
+	top: 35px;
+}
+
+.hands-right {
+	right: 0;
+}
+
+.chalk-line {
+	//need to add additional transforms for browser comp
+	transform: rotate(-45deg);
+	top: 380px;
+	right: 70px
+}
+
+header .top {
 	position: fixed;
 	top: 20px;
 }
 
-.bottom {
+footer .bottom {
 	position: fixed;
 	bottom: 20px;
 }
 
-.left {
+header .left, footer .left {
 	left: 20px;
 }
 
-.right {
+header .right, footer .right {
 	right: 20px;
 }
 
