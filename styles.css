@@ -45,10 +45,23 @@ header a, footer a {
   margin: 5% auto;
   max-width: 80%; }
 
+.landing-container {
+  margin-top: 100px;
+  margin-bottom: 300px; }
+
 .landing {
+  display: inline-block;
   max-width: 50%;
-  padding: 15%;
+  padding: 100px;
   border: 2px solid #5400ff; }
+
+.scroll-ind {
+  display: inline-block;
+  min-width: 15%;
+  max-width: 30%; }
+
+.scroll-ind p {
+  font-size: 3em; }
 
 .hands-left, .hands-right, .chalk-line {
   position: absolute;
@@ -101,9 +114,6 @@ header .right, footer .right {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
 
-.scroll-ind p {
-  font-size: 3em; }
-
 .bg-img {
   display: none;
   position: absolute;
@@ -114,14 +124,13 @@ header .right, footer .right {
   left: -75px; }
 
 .circle {
-  display: none;
   position: fixed;
-  top: 75px;
-  left: 100px;
+  top: 175px;
+  left: 350px;
   z-index: -2;
   width: 300px;
   height: 300px;
-  background: #e8c5a0;
+  background: #f9f9f9;
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
   border-radius: 150px; }
