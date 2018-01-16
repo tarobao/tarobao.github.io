@@ -7,15 +7,26 @@
 	position: relative;
 }
 
+img.hands-left, img.hands-right {
+	//width: 500px;
+	width: 40%;
+}
+
+img.moon {
+	//width: 300px;
+	width: 25%;
+}
+
 .hands-left {
 	@extend %absolute-img;
-	left: 0;
+	left: 0px;
 	top: 35px;
 }
 
 .hands-right {
 	@extend %absolute-img;
-	right: 0;
+	bottom: -150px;
+	right: 0px;
 }
 
 .chalk-line-1 {
@@ -23,7 +34,7 @@
 	//need to add additional transforms for browser comp
 	transform: rotate(-45deg);
 	top: 380px;
-	right: 70px
+	right: 70px;
 }
 
 .chalk-line-2 {
@@ -58,7 +69,7 @@
 
 .moon {
 	@extend %absolute-img;
-	top: 250px;
-	left: 350px;
+	top: 170px;
+	left: 330px;
 }
 

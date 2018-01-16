@@ -5,12 +5,19 @@
 .img-container {
   position: relative; }
 
+img.hands-left, img.hands-right {
+  width: 40%; }
+
+img.moon {
+  width: 25%; }
+
 .hands-left {
-  left: 0;
+  left: 0px;
   top: 35px; }
 
 .hands-right {
-  right: 0; }
+  bottom: -150px;
+  right: 0px; }
 
 .chalk-line-1 {
   transform: rotate(-45deg);
@@ -36,8 +43,8 @@
   right: -50px; }
 
 .moon {
-  top: 250px;
-  left: 350px; }
+  top: 170px;
+  left: 330px; }
 
 body {
   background-color: #f7f5de; }
