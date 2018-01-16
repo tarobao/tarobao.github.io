@@ -32,9 +32,6 @@ ul {
 header a, footer a {
   font-family: "Work Sans", sans-serif; }
 
-.right-align {
-  text-align: right; }
-
 .body-title {
   text-transform: uppercase;
   font-size: 0.5em;
@@ -47,21 +44,24 @@ header a, footer a {
 
 .landing-container {
   margin-top: 100px;
-  margin-bottom: 300px; }
+  margin-bottom: 300px;
+  text-align: right; }
 
 .landing {
   display: inline-block;
   max-width: 50%;
   padding: 100px;
-  border: 2px solid #5400ff; }
+  border: 2px solid #5400ff;
+  text-align: left; }
 
 .scroll-ind {
   display: inline-block;
+  margin: 0 50px;
   min-width: 15%;
   max-width: 30%; }
 
 .scroll-ind p {
-  font-size: 3em; }
+  font-size: 5em; }
 
 .hands-left, .hands-right, .chalk-line {
   position: absolute;
@@ -126,14 +126,14 @@ header .right, footer .right {
 .circle {
   position: fixed;
   top: 175px;
-  left: 350px;
+  left: 300px;
   z-index: -2;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: #f9f9f9;
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
-  border-radius: 150px; }
+  border-radius: 200px; }
 
 .triangle {
   display: none;
