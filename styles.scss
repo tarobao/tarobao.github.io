@@ -2,43 +2,37 @@ $header: 'Work Sans', sans-serif;
 $body: 'Space Mono', monospace;
 $white: #f7f5de;
 $off-white: #f9f9f9;
+$primary: #2d2c31;
 $blue: #5400ff;
 $red: #e8c5a0;
+
+@import 'image-pos';
 
 body {
 	background-color: $white;
 }
 
-@font-face {
-  font-family: og-emoji;
-  src: url(og-dcm-emoji.ttf);
-}
-
-.og {
-  font-family: og-emoji, sans-serif;
-}
-
 h1 {
 	//color: transparent;
-	//-webkit-text-stroke: 2px $blue;
-	color: $blue;
+	//-webkit-text-stroke: 2px $primary;
+	color: $primary;
 	font: 3em $header;
 	margin-bottom: 20px;
 }
 
 h2 {
-	color: $blue;
+	color: $primary;
 	font: 1em $header;
 	text-transform: uppercase;
 }
 
 p {
-	color: $blue;
+	color: $primary;
 	font: 1rem $body;
 }
 
 a {
-	color: $blue;
+	color: $primary;
 	font: 1rem $body;
 }
 
@@ -55,7 +49,7 @@ header a, footer a {
 	text-transform: uppercase;
 	font-size: 0.5em;
 	letter-spacing: 0.5em;
-	border-bottom: 2px solid $blue;
+	border-bottom: 2px solid $primary;
 }
 
 .container {
@@ -74,7 +68,7 @@ header a, footer a {
 	display: inline-block;
 	max-width: 50%;
 	padding: 100px;
-	border: 2px solid $blue;
+	border: 2px solid $primary;
 	text-align: left;
 }
 
@@ -87,28 +81,6 @@ header a, footer a {
 
 .scroll-ind p {
 	font-size: 5em;
-}
-
-
-.hands-left, .hands-right, .chalk-line {
-	position: absolute;
-	z-index: -1;
-}
-
-.hands-left {
-	left: 0;
-	top: 35px;
-}
-
-.hands-right {
-	right: 0;
-}
-
-.chalk-line {
-	//need to add additional transforms for browser comp
-	transform: rotate(-45deg);
-	top: 380px;
-	right: 70px
 }
 
 header .top {
@@ -142,7 +114,7 @@ header .right, footer .right {
 	position: relative;
 	max-width: 50%;
 	padding: 25px 50px;
-	//border: 2px solid $blue;
+	//border: 2px solid $primary;
 
 	img {
 		display: none;
@@ -166,6 +138,7 @@ header .right, footer .right {
 }
 
 .circle {
+	display: none;
 	position: fixed;
 	top: 175px;
 	left: 300px;

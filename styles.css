@@ -1,28 +1,63 @@
+.hands-left, .hands-right, .chalk-line-1, .chalk-line-2, .chalk-circle-1, .chalk-circle-2, .chalk-x, .moon {
+  position: absolute;
+  z-index: -1; }
+
+.img-container {
+  position: relative; }
+
+.hands-left {
+  left: 0;
+  top: 35px; }
+
+.hands-right {
+  right: 0; }
+
+.chalk-line-1 {
+  transform: rotate(-45deg);
+  top: 380px;
+  right: 70px; }
+
+.chalk-line-2 {
+  transform: rotate(180deg);
+  top: 350px;
+  right: 50px; }
+
+.chalk-circle-1 {
+  top: 40px;
+  right: 200px; }
+
+.chalk-circle-2 {
+  transform: rotate(5deg);
+  bottom: -470px;
+  left: 170px; }
+
+.chalk-x {
+  top: 80px;
+  right: -50px; }
+
+.moon {
+  top: 235px;
+  left: 300px; }
+
 body {
   background-color: #f7f5de; }
 
-@font-face {
-  font-family: og-emoji;
-  src: url(og-dcm-emoji.ttf); }
-.og {
-  font-family: og-emoji, sans-serif; }
-
 h1 {
-  color: #5400ff;
+  color: #2d2c31;
   font: 3em "Work Sans", sans-serif;
   margin-bottom: 20px; }
 
 h2 {
-  color: #5400ff;
+  color: #2d2c31;
   font: 1em "Work Sans", sans-serif;
   text-transform: uppercase; }
 
 p {
-  color: #5400ff;
+  color: #2d2c31;
   font: 1rem "Space Mono", monospace; }
 
 a {
-  color: #5400ff;
+  color: #2d2c31;
   font: 1rem "Space Mono", monospace; }
 
 ul {
@@ -36,7 +71,7 @@ header a, footer a {
   text-transform: uppercase;
   font-size: 0.5em;
   letter-spacing: 0.5em;
-  border-bottom: 2px solid #5400ff; }
+  border-bottom: 2px solid #2d2c31; }
 
 .container {
   margin: 5% auto;
@@ -51,7 +86,7 @@ header a, footer a {
   display: inline-block;
   max-width: 50%;
   padding: 100px;
-  border: 2px solid #5400ff;
+  border: 2px solid #2d2c31;
   text-align: left; }
 
 .scroll-ind {
@@ -62,22 +97,6 @@ header a, footer a {
 
 .scroll-ind p {
   font-size: 5em; }
-
-.hands-left, .hands-right, .chalk-line {
-  position: absolute;
-  z-index: -1; }
-
-.hands-left {
-  left: 0;
-  top: 35px; }
-
-.hands-right {
-  right: 0; }
-
-.chalk-line {
-  transform: rotate(-45deg);
-  top: 380px;
-  right: 70px; }
 
 header .top {
   position: fixed;
@@ -124,6 +143,7 @@ header .right, footer .right {
   left: -75px; }
 
 .circle {
+  display: none;
   position: fixed;
   top: 175px;
   left: 300px;
