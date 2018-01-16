@@ -28,7 +28,7 @@
 
 .chalk-circle-2 {
   transform: rotate(5deg);
-  bottom: -470px;
+  bottom: -445px;
   left: 170px; }
 
 .chalk-x {
@@ -36,8 +36,8 @@
   right: -50px; }
 
 .moon {
-  top: 235px;
-  left: 300px; }
+  top: 250px;
+  left: 350px; }
 
 body {
   background-color: #f7f5de; }
