@@ -28,3 +28,10 @@
 	top: 50px;
 	right: -80px
 }
+
+.chalk-circle-1 {
+	@extend %absolute-img;
+	//need to add additional transforms for browser comp
+	top: 10px;
+	left: -50px
+}
