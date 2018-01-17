@@ -7,55 +7,19 @@
 	position: relative;
 }
 
-img.hands-left, img.hands-right {
-	//width: 500px;
-	width: 40%;
-}
-
-img.moon {
-	//width: 300px;
-	width: 25%;
-}
-
-.hands-left {
-	@extend %absolute-img;
-	left: 0px;
-	top: 35px;
-}
-
-.hands-right {
-	@extend %absolute-img;
-	bottom: -150px;
-	right: 0px;
-}
-
 .chalk-line-1 {
 	@extend %absolute-img;
 	//need to add additional transforms for browser comp
-	transform: rotate(-45deg);
-	top: 380px;
-	right: 70px;
+    transform: rotate(-10deg);
+    bottom: -80px;
+    left: 0px;
 }
 
 .chalk-line-2 {
 	@extend %absolute-img;
 	//need to add additional transforms for browser comp
-	transform: rotate(180deg);
-	top: 350px;
-	right: 50px
-}
-
-.chalk-circle-1 {
-	@extend %absolute-img;
-	//need to add additional transforms for browser comp
-	top: 40px;
-	right: 200px
-}
-
-.chalk-circle-2 {
-	@extend %absolute-img;
-	//need to add additional transforms for browser comp
-    transform: rotate(5deg);
+    bottom: -50px;
+    left: 80px;
 }
 
 .chalk-x {
@@ -64,10 +28,3 @@ img.moon {
 	top: 50px;
 	right: -80px
 }
-
-.moon {
-	@extend %absolute-img;
-	top: 170px;
-	left: 330px;
-}
-
