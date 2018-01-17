@@ -18,17 +18,22 @@
   top: 50px;
   right: -80px; }
 
+.img-container {
+  margin: 0 auto;
+  width: 80%; }
+
 .horizontal-wrap {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  align-items: center; }
 
 .works-img {
-  flex: 0 0 auto;
-  margin: 30px; }
+  flex: 1; }
   .works-img img {
-    height: 50%; }
+    max-height: 400px;
+    margin: 10px 80px; }
 
 body {
   background-color: #f7f5de; }
