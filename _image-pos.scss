@@ -45,15 +45,13 @@
 	@extend %absolute-img;
 	//need to add additional transforms for browser comp
     transform: rotate(5deg);
-    bottom: -445px;
-    left: 170px;
 }
 
 .chalk-x {
 	@extend %absolute-img;
 	//need to add additional transforms for browser comp
-	top: 80px;
-	right: -50px
+	top: 50px;
+	right: -80px
 }
 
 .moon {
