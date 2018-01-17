@@ -1,4 +1,4 @@
-.chalk-line-1, .chalk-line-2, .chalk-x {
+.chalk-line-1, .chalk-line-2, .chalk-x, .chalk-circle-1 {
   position: absolute;
   z-index: -1; }
 
@@ -17,6 +17,10 @@
 .chalk-x {
   top: 50px;
   right: -80px; }
+
+.chalk-circle-1 {
+  top: 10px;
+  left: -50px; }
 
 .img-container {
   margin: 0 auto;
@@ -41,6 +45,7 @@ body {
   background-color: #f7f5de; }
 
 h1 {
+  text-transform: uppercase;
   color: #2d2c31;
   font: 3em "Work Sans", sans-serif;
   margin-bottom: 20px; }
