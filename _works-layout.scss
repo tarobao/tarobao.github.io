@@ -1,22 +1,23 @@
 .img-container {
 	margin: 0 auto;
-	width: 80%;
+	width: 100%;
 }
 
 .horizontal-wrap {
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
     align-items: center;
+    justify-content: space-between;
+	-webkit-overflow-scrolling: touch;
 }
 
 .works-img {
     flex: 1;
-
+    margin: 0px 50px;
     img {
 	    max-height: 400px;
-	    margin: 10px 80px;
+	    margin: 20px 0px;
 	}
 }
 

@@ -20,20 +20,22 @@
 
 .img-container {
   margin: 0 auto;
-  width: 80%; }
+  width: 100%; }
 
 .horizontal-wrap {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between;
+  -webkit-overflow-scrolling: touch; }
 
 .works-img {
-  flex: 1; }
+  flex: 1;
+  margin: 0px 50px; }
   .works-img img {
     max-height: 400px;
-    margin: 10px 80px; }
+    margin: 20px 0px; }
 
 body {
   background-color: #f7f5de; }
@@ -76,17 +78,17 @@ header a, footer a {
 
 header .top {
   position: fixed;
-  top: 45px; }
+  top: 30px; }
 
 footer .bottom {
   position: fixed;
-  bottom: 45px; }
+  bottom: 30px; }
 
 header .left, footer .left {
-  left: 45px; }
+  left: 30px; }
 
 header .right, footer .right {
-  right: 45px; }
+  right: 30px; }
 
 .header-box {
   display: inline-block;
