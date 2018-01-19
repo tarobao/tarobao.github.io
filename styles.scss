@@ -9,9 +9,6 @@ $red: #e8c5a0;
 $main-nav-offset: 30px;
 $min-width-content: 65em;
 
-@import 'typography';
-@import 'image-pos';
-@import 'works-layout';
 
 html, body {
 	height: 99%; // ugh try to fix
@@ -77,3 +74,8 @@ header .right, footer .right {
 		max-width: 50%;
 	}
 }
+
+
+@import 'typography';
+@import 'image-pos';
+@import 'works-layout';

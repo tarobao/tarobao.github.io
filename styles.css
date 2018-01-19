@@ -1,3 +1,56 @@
+html, body {
+  height: 99%; }
+
+body {
+  background-color: #f7f5de; }
+
+.flex-wrap {
+  min-height: 100%;
+  display: flex;
+  align-items: center; }
+  @media all and (max-width: 65em) {
+    .flex-wrap {
+      overflow-x: hidden; } }
+
+.container {
+  margin: 5% auto;
+  max-width: 80%;
+  position: relative; }
+  @media all and (min-width: 65em) {
+    .container {
+      max-width: 70%; } }
+
+header .top {
+  position: fixed;
+  top: 30px; }
+
+footer .bottom {
+  position: fixed;
+  bottom: 30px; }
+
+header .left, footer .left {
+  left: 30px; }
+
+header .right, footer .right {
+  right: 30px; }
+
+.header-box {
+  vertical-align: top;
+  padding-left: 50px;
+  min-width: 30%; }
+  @media all and (min-width: 65em) {
+    .header-box {
+      display: inline-block; } }
+
+.content-box {
+  vertical-align: top;
+  padding: 25px 50px;
+  max-width: 100%;
+  display: inline-block; }
+  @media all and (min-width: 65em) {
+    .content-box {
+      max-width: 50%; } }
+
 h1 {
   text-transform: uppercase;
   color: #2d2c31;
@@ -71,58 +124,5 @@ header a, footer a {
   .works-img img {
     max-height: 400px;
     margin: 20px 0px; }
-
-html, body {
-  height: 99%; }
-
-body {
-  background-color: #f7f5de; }
-
-.flex-wrap {
-  min-height: 100%;
-  display: flex;
-  align-items: center; }
-  @media all and (max-width: 65em) {
-    .flex-wrap {
-      overflow-x: hidden; } }
-
-.container {
-  margin: 5% auto;
-  max-width: 80%;
-  position: relative; }
-  @media all and (min-width: 65em) {
-    .container {
-      max-width: 70%; } }
-
-header .top {
-  position: fixed;
-  top: 30px; }
-
-footer .bottom {
-  position: fixed;
-  bottom: 30px; }
-
-header .left, footer .left {
-  left: 30px; }
-
-header .right, footer .right {
-  right: 30px; }
-
-.header-box {
-  vertical-align: top;
-  padding-left: 50px;
-  min-width: 30%; }
-  @media all and (min-width: 65em) {
-    .header-box {
-      display: inline-block; } }
-
-.content-box {
-  vertical-align: top;
-  padding: 25px 50px;
-  max-width: 100%;
-  display: inline-block; }
-  @media all and (min-width: 65em) {
-    .content-box {
-      max-width: 50%; } }
 
 /*# sourceMappingURL=styles.css.map */
