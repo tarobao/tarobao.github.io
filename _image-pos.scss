@@ -10,7 +10,7 @@
 .chalk-line-1 {
 	@extend %absolute-img;
 	//need to add additional transforms for browser comp
-    transform: rotate(-10deg);
+    //transform: rotate(-10deg);
     bottom: -80px;
     left: 0px;
 }

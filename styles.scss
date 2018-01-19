@@ -7,69 +7,37 @@ $blue: #5400ff;
 $red: #e8c5a0;
 
 $main-nav-offset: 30px;
+$min-width-content: 65em;
 
+@import 'typography';
 @import 'image-pos';
 @import 'works-layout';
 
 html, body {
-	height: 99%; // for some reason setting height at 100% makes a weird scroll effect for
+	height: 99%; // ugh try to fix
 }
 
 body {
 	background-color: $white;
 }
 
-h1 {
-	//color: transparent;
-	//-webkit-text-stroke: 2px $primary;
-	text-transform: uppercase;
-	color: $primary;
-	font: 3em $header;
-	margin-bottom: 20px;
-}
-
-h2 {
-	color: $primary;
-	font: 1em $header;
-	text-transform: uppercase;
-}
-
-p {
-	color: $primary;
-	font: 1rem $body;
-}
-
-a {
-	color: $primary;
-	font: 1rem $body;
-}
-
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-header a, footer a {
-	font-family: $header;
-}
-
-.body-title {
-	text-transform: uppercase;
-	font-size: 0.5em;
-	letter-spacing: 0.5em;
-	border-bottom: 2px solid $primary;
-}
-
 .flex-wrap {
 	min-height: 100%;
     display: flex;
     align-items: center;
+	@media all and (max-width: $min-width-content) {
+    	overflow-x: hidden;
+    }
 }
+
 
 .container {
 	margin: 5% auto;
-	max-width: 70%;
+	max-width: 80%;
 	position: relative; // strictly for image positioning
+	@media all and (min-width: $min-width-content) {
+		max-width: 70%;
+	}
 }
 
 header .top {
@@ -91,16 +59,21 @@ header .right, footer .right {
 }
 
 .header-box {
-	display: inline-block;
 	vertical-align: top;
 	padding-left: 50px;
-	min-width: 30%;
+	min-width: 30%; // find out why you ddi this lmfaooo
+	@media all and (min-width: $min-width-content) {
+		display: inline-block;
+	}
 }
 
 .content-box {
-	display: inline-block;
 	vertical-align: top;
-	max-width: 50%;
 	padding: 25px 50px;
 	//border: 2px solid $primary;
+	max-width: 100%;
+	display: inline-block;
+	@media all and (min-width: $min-width-content) {
+		max-width: 50%;
+	}
 }

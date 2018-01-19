@@ -1,3 +1,35 @@
+h1 {
+  text-transform: uppercase;
+  color: #2d2c31;
+  font: 3em "Work Sans", sans-serif;
+  margin-bottom: 20px; }
+
+h2 {
+  color: #2d2c31;
+  font: 1em "Work Sans", sans-serif;
+  text-transform: uppercase; }
+
+p {
+  color: #2d2c31;
+  font: 1rem "Space Mono", monospace; }
+
+a {
+  color: #2d2c31;
+  font: 1rem "Space Mono", monospace; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+header a, footer a {
+  font-family: "Work Sans", sans-serif; }
+
+.body-title {
+  text-transform: uppercase;
+  font-size: 0.5em;
+  letter-spacing: 0.5em;
+  border-bottom: 2px solid #2d2c31; }
+
 .chalk-line-1, .chalk-line-2, .chalk-x, .chalk-circle-1 {
   position: absolute;
   z-index: -1; }
@@ -6,7 +38,6 @@
   position: relative; }
 
 .chalk-line-1 {
-  transform: rotate(-10deg);
   bottom: -80px;
   left: 0px; }
 
@@ -47,47 +78,21 @@ html, body {
 body {
   background-color: #f7f5de; }
 
-h1 {
-  text-transform: uppercase;
-  color: #2d2c31;
-  font: 3em "Work Sans", sans-serif;
-  margin-bottom: 20px; }
-
-h2 {
-  color: #2d2c31;
-  font: 1em "Work Sans", sans-serif;
-  text-transform: uppercase; }
-
-p {
-  color: #2d2c31;
-  font: 1rem "Space Mono", monospace; }
-
-a {
-  color: #2d2c31;
-  font: 1rem "Space Mono", monospace; }
-
-ul {
-  list-style-type: none;
-  padding: 0; }
-
-header a, footer a {
-  font-family: "Work Sans", sans-serif; }
-
-.body-title {
-  text-transform: uppercase;
-  font-size: 0.5em;
-  letter-spacing: 0.5em;
-  border-bottom: 2px solid #2d2c31; }
-
 .flex-wrap {
   min-height: 100%;
   display: flex;
   align-items: center; }
+  @media all and (max-width: 65em) {
+    .flex-wrap {
+      overflow-x: hidden; } }
 
 .container {
   margin: 5% auto;
-  max-width: 70%;
+  max-width: 80%;
   position: relative; }
+  @media all and (min-width: 65em) {
+    .container {
+      max-width: 70%; } }
 
 header .top {
   position: fixed;
@@ -104,15 +109,20 @@ header .right, footer .right {
   right: 30px; }
 
 .header-box {
-  display: inline-block;
   vertical-align: top;
   padding-left: 50px;
   min-width: 30%; }
+  @media all and (min-width: 65em) {
+    .header-box {
+      display: inline-block; } }
 
 .content-box {
-  display: inline-block;
   vertical-align: top;
-  max-width: 50%;
-  padding: 25px 50px; }
+  padding: 25px 50px;
+  max-width: 100%;
+  display: inline-block; }
+  @media all and (min-width: 65em) {
+    .content-box {
+      max-width: 50%; } }
 
 /*# sourceMappingURL=styles.css.map */

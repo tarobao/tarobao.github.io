@@ -1,0 +1,40 @@
+h1 {
+	//color: transparent;
+	//-webkit-text-stroke: 2px $primary;
+	text-transform: uppercase;
+	color: $primary;
+	font: 3em $header;
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: $primary;
+	font: 1em $header;
+	text-transform: uppercase;
+}
+
+p {
+	color: $primary;
+	font: 1rem $body;
+}
+
+a {
+	color: $primary;
+	font: 1rem $body;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+header a, footer a {
+	font-family: $header;
+}
+
+.body-title {
+	text-transform: uppercase;
+	font-size: 0.5em;
+	letter-spacing: 0.5em;
+	border-bottom: 2px solid $primary;
+}
