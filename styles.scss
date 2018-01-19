@@ -11,6 +11,10 @@ $main-nav-offset: 30px;
 @import 'image-pos';
 @import 'works-layout';
 
+html, body {
+	height: 99%; // for some reason setting height at 100% makes a weird scroll effect for
+}
+
 body {
 	background-color: $white;
 }
@@ -56,10 +60,15 @@ header a, footer a {
 	border-bottom: 2px solid $primary;
 }
 
+.flex-wrap {
+	min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .container {
 	margin: 5% auto;
-	//padding-left: 15%;
-	max-width: 80%;
+	max-width: 70%;
 	position: relative; // strictly for image positioning
 }
 

@@ -41,6 +41,9 @@
     max-height: 400px;
     margin: 20px 0px; }
 
+html, body {
+  height: 99%; }
+
 body {
   background-color: #f7f5de; }
 
@@ -76,9 +79,14 @@ header a, footer a {
   letter-spacing: 0.5em;
   border-bottom: 2px solid #2d2c31; }
 
+.flex-wrap {
+  min-height: 100%;
+  display: flex;
+  align-items: center; }
+
 .container {
   margin: 5% auto;
-  max-width: 80%;
+  max-width: 70%;
   position: relative; }
 
 header .top {
