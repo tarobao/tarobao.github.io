@@ -1,43 +1,46 @@
 $header: 'Work Sans', sans-serif;
 $body: 'Space Mono', monospace;
 $white: #f7f5de;
+$off-white: #f9f9f9;
+$primary: #2d2c31;
 $blue: #5400ff;
 $red: #e8c5a0;
+
+$main-nav-offset: 30px;
+
+@import 'image-pos';
+@import 'works-layout';
+
+html, body {
+	height: 99%; // for some reason setting height at 100% makes a weird scroll effect for
+}
 
 body {
 	background-color: $white;
 }
 
-@font-face {
-  font-family: og-emoji;
-  src: url(og-dcm-emoji.ttf);
-}
-
-.og {
-  font-family: og-emoji, sans-serif;
-}
-
 h1 {
 	//color: transparent;
-	//-webkit-text-stroke: 2px $blue;
-	color: $blue;
+	//-webkit-text-stroke: 2px $primary;
+	text-transform: uppercase;
+	color: $primary;
 	font: 3em $header;
 	margin-bottom: 20px;
 }
 
 h2 {
-	color: $blue;
+	color: $primary;
 	font: 1em $header;
 	text-transform: uppercase;
 }
 
 p {
-	color: $blue;
+	color: $primary;
 	font: 1rem $body;
 }
 
 a {
-	color: $blue;
+	color: $primary;
 	font: 1rem $body;
 }
 
@@ -50,49 +53,41 @@ header a, footer a {
 	font-family: $header;
 }
 
-.right-align {
-	text-align: right;
-}
-
 .body-title {
 	text-transform: uppercase;
 	font-size: 0.5em;
 	letter-spacing: 0.5em;
-	border-bottom: 2px solid $blue;
+	border-bottom: 2px solid $primary;
 }
 
-#titulo {
-	line-height: 1em;
+.flex-wrap {
+	min-height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .container {
 	margin: 5% auto;
-	//padding-left: 15%;
-	max-width: 80%;
+	max-width: 70%;
+	position: relative; // strictly for image positioning
 }
 
-.landing {
-	max-width: 50%;
-	padding: 15%;
-	border: 2px solid $blue;
-}
-
-.top {
+header .top {
 	position: fixed;
-	top: 20px;
+	top: $main-nav-offset;
 }
 
-.bottom {
+footer .bottom {
 	position: fixed;
-	bottom: 20px;
+	bottom: $main-nav-offset;
 }
 
-.left {
-	left: 20px;
+header .left, footer .left {
+	left: $main-nav-offset;
 }
 
-.right {
-	right: 20px;
+header .right, footer .right {
+	right: $main-nav-offset;
 }
 
 .header-box {
@@ -105,59 +100,7 @@ header a, footer a {
 .content-box {
 	display: inline-block;
 	vertical-align: top;
-	position: relative;
 	max-width: 50%;
 	padding: 25px 50px;
-	//border: 2px solid $blue;
-
-	img {
-		display: none;
-		position: absolute;
-		z-index: -1;
-	    bottom: -75px;
-	    right: -90px;
-		-webkit-transform: scaleX(-1);
-    	transform: scaleX(-1);
-	}
-}
-
-.scroll-ind p {
-	font-size: 3em;
-}
-
-.bg-img {
-	display: none;
-	position: absolute;
-	z-index: -1;
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
-	top: 0px;
-	left: -75px;
-}
-
-.circle {
-	display: none;
-	position: fixed;
-	top: 75px;
-	left: 100px;
-	z-index: -2;
-	width: 300px;
-	height: 300px;
-	background: $red;
-	-moz-border-radius: 150px;
-	-webkit-border-radius: 150px;
-	border-radius: 150px;
-}
-
-.triangle {
-	display: none;
-	position: fixed;
-	z-index: -2;
-	bottom: 100px;
-	right: 50px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 175px 303.1px 175px;
-	border-color: transparent transparent $red transparent;
+	//border: 2px solid $primary;
 }
