@@ -10,7 +10,7 @@ body {
   align-items: center; }
   @media all and (max-width: 65em) {
     .flex-wrap {
-      overflow-x: hidden; } }
+      overflow: hidden; } }
 
 .container {
   margin: 5% auto;
@@ -91,6 +91,7 @@ header a, footer a {
   position: relative; }
 
 .chalk-line-1 {
+  transform: rotate(-10deg);
   bottom: -80px;
   left: 0px; }
 

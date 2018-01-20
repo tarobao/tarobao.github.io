@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: center;
 	@media all and (max-width: $min-width-content) {
-    	overflow-x: hidden;
+    	overflow: hidden; // fixing issue with absolutely placed images
     }
 }
 
