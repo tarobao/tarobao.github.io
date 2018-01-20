@@ -13,19 +13,22 @@ body {
       overflow: hidden; } }
 
 .container {
-  margin: 5% auto;
+  margin: 15% auto;
   max-width: 80%;
   position: relative; }
   @media all and (min-width: 65em) {
     .container {
+      margin: 5% auto;
       max-width: 70%; } }
 
 header .top {
   position: fixed;
+  z-index: 1;
   top: 30px; }
 
 footer .bottom {
   position: fixed;
+  z-index: 1;
   bottom: 30px; }
 
 header .left, footer .left {
@@ -36,20 +39,30 @@ header .right, footer .right {
 
 .header-box {
   vertical-align: top;
-  padding-left: 50px;
+  padding-left: 15px;
   min-width: 30%; }
   @media all and (min-width: 65em) {
     .header-box {
       display: inline-block; } }
+  @media all and (min-width: 25em) {
+    .header-box {
+      padding-left: 50px; } }
 
 .content-box {
   vertical-align: top;
-  padding: 25px 50px;
+  padding: 25px 15px;
   max-width: 100%;
   display: inline-block; }
   @media all and (min-width: 65em) {
     .content-box {
       max-width: 50%; } }
+  @media all and (min-width: 25em) {
+    .content-box {
+      padding: 25px 50px; } }
+
+@media all and (max-width: 50em) {
+  span.scroll-indication {
+    display: none; } }
 
 h1 {
   text-transform: uppercase;
@@ -99,6 +112,14 @@ header a, footer a {
   bottom: -50px;
   left: 80px; }
 
+.angled-left {
+  transform: rotate(45deg); }
+
+.angled-right {
+  transform: rotate(-45deg);
+  top: 30px;
+  left: -25px; }
+
 .chalk-x {
   top: 50px;
   right: -80px; }
@@ -112,18 +133,28 @@ header a, footer a {
   width: 100%; }
 
 .horizontal-wrap {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  align-items: center;
-  justify-content: space-between;
-  -webkit-overflow-scrolling: touch; }
+  text-align: center; }
+  @media all and (min-width: 50em) {
+    .horizontal-wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      align-items: center;
+      justify-content: space-between;
+      -webkit-overflow-scrolling: touch; } }
 
 .works-img {
-  flex: 1;
-  margin: 0px 50px; }
-  .works-img img {
-    max-height: 400px;
-    margin: 20px 0px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  @media all and (max-width: 50em) {
+    .works-img img {
+      width: 100%; } }
+  @media all and (min-width: 50em) {
+    .works-img {
+      flex: 1;
+      margin-left: 50px;
+      margin-right: 50px; }
+      .works-img img {
+        max-height: 400px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,6 +8,8 @@ $red: #e8c5a0;
 
 $main-nav-offset: 30px;
 $min-width-content: 65em;
+$min-padding-content: 25em;
+$min-flex-content: 50em;
 
 
 html, body {
@@ -29,21 +31,24 @@ body {
 
 
 .container {
-	margin: 5% auto;
+	margin: 15% auto;
 	max-width: 80%;
 	position: relative; // strictly for image positioning
 	@media all and (min-width: $min-width-content) {
+		margin: 5% auto;
 		max-width: 70%;
 	}
 }
 
 header .top {
 	position: fixed;
+	z-index: 1;
 	top: $main-nav-offset;
 }
 
 footer .bottom {
 	position: fixed;
+	z-index: 1;
 	bottom: $main-nav-offset;
 }
 
@@ -57,24 +62,36 @@ header .right, footer .right {
 
 .header-box {
 	vertical-align: top;
-	padding-left: 50px;
+	padding-left: 15px;
 	min-width: 30%; // find out why you ddi this lmfaooo
 	@media all and (min-width: $min-width-content) {
 		display: inline-block;
+	}
+	
+	@media all and (min-width: $min-padding-content) {
+		padding-left: 50px;
 	}
 }
 
 .content-box {
 	vertical-align: top;
-	padding: 25px 50px;
-	//border: 2px solid $primary;
+	padding: 25px 15px;
 	max-width: 100%;
 	display: inline-block;
 	@media all and (min-width: $min-width-content) {
 		max-width: 50%;
 	}
+
+	@media all and (min-width: $min-padding-content) {
+		padding: 25px 50px;
+	}
 }
 
+span.scroll-indication {
+	@media all and (max-width: $min-flex-content) {
+		display: none;
+	}
+}
 
 @import 'typography';
 @import 'image-pos';

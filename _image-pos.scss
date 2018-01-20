@@ -22,6 +22,16 @@
     left: 80px;
 }
 
+.angled-left {
+	transform: rotate(45deg);
+}
+
+.angled-right {
+	transform: rotate(-45deg);
+    top: 30px;
+    left: -25px;
+}
+
 .chalk-x {
 	@extend %absolute-img;
 	//need to add additional transforms for browser comp

@@ -4,20 +4,33 @@
 }
 
 .horizontal-wrap {
-	display: flex;
-	flex-wrap: nowrap;
-	overflow-x: auto;
-    align-items: center;
-    justify-content: space-between;
-	-webkit-overflow-scrolling: touch;
+	text-align: center;
+	@media all and (min-width: $min-flex-content) {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+	    align-items: center;
+	    justify-content: space-between;
+		-webkit-overflow-scrolling: touch;
+	}
 }
 
 .works-img {
-    flex: 1;
-    margin: 0px 50px;
-    img {
-	    max-height: 400px;
-	    margin: 20px 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	@media all and (max-width: $min-flex-content) {
+		img {
+			width: 100%;
+		}
+	}
+
+	@media all and (min-width: $min-flex-content) {
+	    flex: 1;
+	    margin-left: 50px;
+	    margin-right: 50px;
+	    img {
+		    max-height: 400px;
+		}
 	}
 }
 
