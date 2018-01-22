@@ -5,7 +5,7 @@
 
 .horizontal-wrap {
 	text-align: center;
-	@media all and (min-width: $min-flex-content) {
+	@media all and (min-width: $min-flex) {
 		display: flex;
 		flex-wrap: nowrap;
 		overflow-x: auto;
@@ -18,13 +18,13 @@
 .works-img {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	@media all and (max-width: $min-flex-content) {
+	@media all and (max-width: $min-flex) {
 		img {
 			width: 100%;
 		}
 	}
 
-	@media all and (min-width: $min-flex-content) {
+	@media all and (min-width: $min-flex) {
 	    flex: 1;
 	    margin-left: 50px;
 	    margin-right: 50px;

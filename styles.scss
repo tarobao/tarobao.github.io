@@ -1,98 +1,27 @@
-$header: 'Work Sans', sans-serif;
-$body: 'Space Mono', monospace;
+// MISC. COLORS
+
 $white: #f7f5de;
 $off-white: #f9f9f9;
-$primary: #2d2c31;
 $blue: #5400ff;
 $red: #e8c5a0;
+$dark-gray: #2d2c31;
+
+$background: $white;
+$primary: $dark-gray;
+
+// FONT FAMILIES
+
+$header: 'Work Sans', sans-serif;
+$body: 'Space Mono', monospace;
+
+// MEDIA QUERIES
 
 $main-nav-offset: 30px;
-$min-width-content: 65em;
-$min-padding-content: 25em;
-$min-flex-content: 50em;
-
-
-html, body {
-	height: 99%; // ugh try to fix
-}
-
-body {
-	background-color: $white;
-}
-
-.flex-wrap {
-	min-height: 100%;
-    display: flex;
-    align-items: center;
-	@media all and (max-width: $min-width-content) {
-    	overflow: hidden; // fixing issue with absolutely placed images
-    }
-}
-
-
-.container {
-	margin: 15% auto;
-	max-width: 80%;
-	position: relative; // strictly for image positioning
-	@media all and (min-width: $min-width-content) {
-		margin: 5% auto;
-		max-width: 70%;
-	}
-}
-
-header .top {
-	position: fixed;
-	z-index: 1;
-	top: $main-nav-offset;
-}
-
-footer .bottom {
-	position: fixed;
-	z-index: 1;
-	bottom: $main-nav-offset;
-}
-
-header .left, footer .left {
-	left: $main-nav-offset;
-}
-
-header .right, footer .right {
-	right: $main-nav-offset;
-}
-
-.header-box {
-	vertical-align: top;
-	padding-left: 15px;
-	min-width: 30%; // find out why you ddi this lmfaooo
-	@media all and (min-width: $min-width-content) {
-		display: inline-block;
-	}
-	
-	@media all and (min-width: $min-padding-content) {
-		padding-left: 50px;
-	}
-}
-
-.content-box {
-	vertical-align: top;
-	padding: 25px 15px;
-	max-width: 100%;
-	display: inline-block;
-	@media all and (min-width: $min-width-content) {
-		max-width: 50%;
-	}
-
-	@media all and (min-width: $min-padding-content) {
-		padding: 25px 50px;
-	}
-}
-
-span.scroll-indication {
-	@media all and (max-width: $min-flex-content) {
-		display: none;
-	}
-}
+$min-width: 65em; // minimum width for certain div structures
+$min-padding: 25em; // minimum width for applying certain padding styles
+$min-flex: 50em; // minimum width for flex toggle + scroll indications on works
 
 @import 'typography';
-@import 'image-pos';
+@import 'layout';
 @import 'works-layout';
+@import 'image-pos';

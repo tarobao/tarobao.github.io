@@ -3,45 +3,49 @@
 	z-index: -1;
 }
 
+@mixin transform($degree) {
+  -webkit-transform: $degree;
+     -moz-transform: $degree;
+      -ms-transform: $degree;
+       -o-transform: $degree;
+          transform: $degree;
+}
+
 .img-container {
 	position: relative;
 }
 
 .chalk-line-1 {
 	@extend %absolute-img;
-	// need to add additional transforms for browser comp
-    transform: rotate(-10deg);
+    @include transform(-10deg);
     bottom: -80px;
-    left: 0px;
+    left: 0;
 }
 
 .chalk-line-2 {
 	@extend %absolute-img;
-	//need to add additional transforms for browser comp
     bottom: -50px;
     left: 80px;
 }
 
 .angled-left {
-	transform: rotate(45deg);
+	@include transform(45deg);
 }
 
 .angled-right {
-	transform: rotate(-45deg);
+	@include transform(-45deg);
     top: 30px;
     left: -25px;
 }
 
 .chalk-x {
 	@extend %absolute-img;
-	//need to add additional transforms for browser comp
 	top: 50px;
 	right: -80px
 }
 
 .chalk-circle-1 {
 	@extend %absolute-img;
-	//need to add additional transforms for browser comp
 	top: 10px;
 	left: -50px
 }
