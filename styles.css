@@ -133,11 +133,11 @@ header .right, footer .right {
   position: relative; }
 
 .chalk-line-1 {
-  -webkit-transform: -10deg;
-  -moz-transform: -10deg;
-  -ms-transform: -10deg;
-  -o-transform: -10deg;
-  transform: -10deg;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
   bottom: -80px;
   left: 0; }
 
@@ -146,18 +146,18 @@ header .right, footer .right {
   left: 80px; }
 
 .angled-left {
-  -webkit-transform: 45deg;
-  -moz-transform: 45deg;
-  -ms-transform: 45deg;
-  -o-transform: 45deg;
-  transform: 45deg; }
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
 
 .angled-right {
-  -webkit-transform: -45deg;
-  -moz-transform: -45deg;
-  -ms-transform: -45deg;
-  -o-transform: -45deg;
-  transform: -45deg;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 30px;
   left: -25px; }
 

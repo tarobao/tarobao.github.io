@@ -4,11 +4,11 @@
 }
 
 @mixin transform($degree) {
-  -webkit-transform: $degree;
-     -moz-transform: $degree;
-      -ms-transform: $degree;
-       -o-transform: $degree;
-          transform: $degree;
+  -webkit-transform: rotate($degree);
+     -moz-transform: rotate($degree);
+      -ms-transform: rotate($degree);
+       -o-transform: rotate($degree);
+          transform: rotate($degree);
 }
 
 .img-container {
