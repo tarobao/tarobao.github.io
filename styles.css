@@ -13,13 +13,12 @@ p {
   color: #2d2c31;
   font: 1rem "Space Mono", monospace; }
 
-a {
+a, li {
   color: #2d2c31;
   font: 1rem "Space Mono", monospace; }
 
 ul {
-  list-style-type: none;
-  padding: 0; }
+  padding-left: 20px; }
 
 header a, footer a {
   font-family: "Work Sans", sans-serif; }
