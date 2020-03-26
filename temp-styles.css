@@ -80,6 +80,7 @@ header .right, footer .right {
       padding-left: 50px; } }
 
 .content-box {
+  float:right;
   vertical-align: top;
   padding: 25px 15px;
   max-width: 100%;
