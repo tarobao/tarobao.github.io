@@ -1,0 +1,113 @@
+h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font: 3em "Work Sans", sans-serif;
+  margin-bottom: 20px; }
+
+h2 {
+  color: #fff;
+  font: 1em "Work Sans", sans-serif;
+  text-transform: uppercase; }
+
+p {
+  color: #fff;
+  font: 1rem "Space Mono", monospace; }
+
+a, li {
+  color: #fff;
+  font: 1rem "Space Mono", monospace; }
+
+ul {
+  padding-left: 20px; }
+
+header a, footer a {
+  font-family: "Work Sans", sans-serif; }
+
+.body-title {
+  text-transform: uppercase;
+  font-size: 0.5em;
+  letter-spacing: 0.5em;
+  border-bottom: 2px solid #fff; }
+
+html, body {
+  height: 99%; }
+
+body {
+  background-color: #000; }
+
+.flex-wrap {
+  min-height: 100%;
+  display: flex;
+  align-items: center; }
+  @media all and (max-width: 65em) {
+    .flex-wrap {
+      overflow: hidden; } }
+
+.container {
+  max-width: 80%;
+  margin: 15% auto;
+  position: relative; }
+  @media all and (min-width: 65em) {
+    .container {
+      margin: 5% auto;
+      max-width: 70%; } }
+
+header .top {
+  position: fixed;
+  z-index: 1;
+  top: 30px; }
+
+footer .bottom {
+  position: fixed;
+  z-index: 1;
+  bottom: 30px; }
+
+header .left, footer .left {
+  left: 30px; }
+
+header .right, footer .right {
+  right: 30px; }
+
+.header-box {
+  vertical-align: top;
+  padding-left: 15px;
+  min-width: 30%; }
+  @media all and (min-width: 65em) {
+    .header-box {
+      display: inline-block; } }
+  @media all and (min-width: 25em) {
+    .header-box {
+      padding-left: 50px; } }
+
+.content-box {
+  vertical-align: top;
+  padding: 25px 15px;
+  max-width: 100%;
+  display: inline-block; }
+  @media all and (min-width: 65em) {
+    .content-box {
+      max-width: 50%; } }
+  @media all and (min-width: 25em) {
+    .content-box {
+      padding: 25px 50px; } }
+
+@media all and (max-width: 50em) {
+  .scroll-indication {
+    display: none; } }
+
+.img-container {
+  margin: 0 auto;
+  width: 100%; }
+
+.horizontal-wrap {
+  text-align: center; }
+  @media all and (min-width: 50em) {
+    .horizontal-wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      align-items: center;
+      justify-content: space-between;
+      -webkit-overflow-scrolling: touch; } }
+
+/*# sourceMappingURL=styles.css.map */
